@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyredox"
-version = "1.0.4"
+version = "1.0.5"
 description = ""
 authors = ["Mike Mabey <mike.mabey@cedar.com>"]
 homepage = "https://github.com/cedar-team/pyredox"
@@ -19,8 +19,8 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.7,<4.0"
-pydantic = "~1.9.0"
+python = ">=3.8,<4.0"
+pydantic = "~2.9.2"
 
 [tool.poetry.dev-dependencies]
 Brotli = "^1.0.9"
