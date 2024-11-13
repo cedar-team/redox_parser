@@ -4,8 +4,8 @@ from datetime import date, datetime, timezone
 from typing import List, Type
 
 import pytest
-from pydantic import ValidationError
-from pydantic.typing import NoneType
+from pydantic.v1 import ValidationError
+from pydantic.v1.typing import NoneType
 
 from pyredox.abstract_base import EventTypeAbstractModel
 from pyredox.claim import Submission

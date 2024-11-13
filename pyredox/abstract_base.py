@@ -3,8 +3,8 @@
 import abc
 from typing import Any, Mapping, Union
 
-from pydantic import BaseModel, Extra, ExtraError, Field, ValidationError
-from pydantic.error_wrappers import ErrorWrapper
+from pydantic.v1 import BaseModel, Extra, ExtraError, Field, ValidationError
+from pydantic.v1.error_wrappers import ErrorWrapper
 
 __all__ = [
     "CannotRectifyValidationError",
