@@ -82,7 +82,7 @@ def test_invalid_payload():
     """Ensure a missing required field raises a ValidationError."""
     patient_missing = deepcopy(dict_patient_update)
     # noinspection PyTypedDict
-    patient_missing["Patient"] = {}
+    patient_missing["Patient"] = None
 
     with pytest.raises(ValidationError):
         redox_object_factory(patient_missing)
