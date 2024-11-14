@@ -259,7 +259,7 @@ Some Event Type models specify a list of strings and others require an `EmailAdd
 detect when such a type mismatch occurs is to catch the `pydantic.ValidationError` exception, like this:
 
 ```python
-from pydantic import ValidationError
+from pydantic.v1 import ValidationError
 
 try:
     new_provider_json = NewProvider(

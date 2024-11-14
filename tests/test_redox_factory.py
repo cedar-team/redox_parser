@@ -4,8 +4,8 @@ from datetime import date, datetime, timezone
 from typing import List, Type
 
 import pytest
-from pydantic import ValidationError
-from pydantic.typing import NoneType
+from pydantic.v1 import ValidationError
+from pydantic.v1.typing import NoneType
 
 from pyredox.abstract_base import EventTypeAbstractModel
 from pyredox.claim import Submission
@@ -82,7 +82,7 @@ def test_invalid_payload():
     """Ensure a missing required field raises a ValidationError."""
     patient_missing = deepcopy(dict_patient_update)
     # noinspection PyTypedDict
-    patient_missing["Patient"] = {}
+    patient_missing["Patient"] = None
 
     with pytest.raises(ValidationError):
         redox_object_factory(patient_missing)

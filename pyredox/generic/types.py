@@ -3,7 +3,7 @@
 
 from typing import List, Union
 
-from pydantic import Field
+from pydantic.v1 import Field
 
 from ..abstract_base import RedoxAbstractModel
 from ..field_types import Number

@@ -3,7 +3,7 @@
 
 from typing import List, Union
 
-from pydantic import Field
+from pydantic.v1 import Field
 
 from pyredox import order
 from ..abstract_base import GenericEventTypeAbstractModel
