@@ -14,9 +14,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Python and Poetry
-        uses: actions/setup-python@v5
+        uses: ITProKyle/action-setup-python@v0.1.0
         with:
-          python-version: 3.9
+          python-version: 3.7
 
       - name: Set up poetry virtualenv
         run: poetry install
